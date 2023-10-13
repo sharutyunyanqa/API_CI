@@ -1,4 +1,4 @@
-package ru.netology.rest;
+git package ru.netology.rest;
 
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +23,7 @@ class MobileBankApiTestV4 {
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
                 .body("[0].id", equalTo(1))
                 .body("[1].balance",greaterThan(1))
-                .body("[2].currency",equalTo("RUB"))
+                .body("[2].currency",equalTo("RUR"))
                 .body("[1].currency",equalTo("USD"))
                        ;
     }
