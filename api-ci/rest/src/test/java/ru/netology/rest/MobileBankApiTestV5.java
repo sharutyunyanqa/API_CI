@@ -1,6 +1,8 @@
 package ru.netology.rest;
 
 import io.restassured.http.ContentType;
+import io.restassured.specification.Argument;
+import io.restassured.specification.Argument;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 
@@ -25,4 +27,6 @@ class MobileBankApiTestV5 {
           .body("every{ it.balance >= 0 }", is(true))
       ;
     }
+
+
 }
